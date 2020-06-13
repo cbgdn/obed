@@ -2,13 +2,16 @@
   "name": "obed",
   "version": "0.1.0",
   "description": "GUI für Aufnahme-Scripte",
+  "author": "Artur Weigandt",
+  "license": "GPL-3.0-or-later",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
-  "author": "Artur Weigandt",
-  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  },
   "devDependencies": {
     "electron": "^9.0.4"
   }
