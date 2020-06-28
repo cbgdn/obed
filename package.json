@@ -4,17 +4,33 @@
   "description": "GUI für Aufnahme-Scripte",
   "author": "Artur Weigandt",
   "license": "GPL-3.0-or-later",
+  "private": true,
   "main": "main.js",
+  "build": {
+    "appId": "de.cbgdn.dev.obed",
+    "directories": {
+      "buildResources": "static"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "dev": "cross-env NODE_ENV=DEV electron .",
+    "build": "nuxt build && electron-builder"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "nuxt": "^2.13.2"
   },
   "devDependencies": {
-    "electron": "^9.0.4"
+    "babel-eslint": "^10",
+    "cross-env": "^7",
+    "electron": "^8.3.4",
+    "electron-builder": "^22",
+    "electron-devtools-installer": "^3",
+    "eslint": "^7",
+    "eslint-friendly-formatter": "^4",
+    "eslint-loader": "^4",
+    "eslint-plugin-vue": "^6"
   }
 }
